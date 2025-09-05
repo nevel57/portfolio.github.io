@@ -1,0 +1,177 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif; /* Более современный шрифт */
+  margin: 0; /* Убираем отступы по умолчанию */
+  background-color: #f4f4f4; /* Светло-серый фон */
+  color: #333; /* Темно-серый текст */
+  line-height: 1.6; /* Увеличиваем межстрочный интервал для читаемости */
+}
+
+.container {
+  max-width: 960px; /* Увеличиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+  padding: 20px; /* Добавляем отступы внутри контейнера */
+}
+
+h1, h2 {
+  color: #333; /* Темно-серый цвет заголовков */
+  margin-bottom: 10px;
+  font-weight: normal; /* Стандартный вес заголовков */
+}
+
+h1 {
+  font-size: 2.5em; /* Увеличиваем размер заголовка h1 */
+  text-align: center; /* Центрируем главный заголовок */
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2em; /* Увеличиваем размер заголовка h2 */
+  border-bottom: 1px solid #ccc; /* Линия под заголовком h2 */
+  padding-bottom: 5px; /* Отступ от текста до линии */
+}
+
+p {
+  margin-bottom: 15px; /* Увеличиваем отступ между параграфами */
+}
+
+ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы списка */
+}
+
+li {
+  margin-bottom: 8px; /* Отступ между элементами списка */
+}
+
+a {
+  color: #007bff; /* Синий цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+a:hover {
+  text-decoration: underline; /* Подчеркиваем ссылки при наведении */
+  color: #0056b3; /* Более темный синий цвет при наведении */
+}
+
+/* Стили для секций */
+.section {
+  background-color: #fff; /* Белый фон секций */
+  padding: 20px; /* Увеличиваем отступы внутри секций */
+  border-radius: 8px; /* Скругление углов */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для секций */
+  margin-bottom: 20px;
+}
+
+/* Стили для ссылок на GitHub и Telegram */
+.github-link,
+.telegram-link {
+  display: block; /* Занимают всю ширину */
+  background-color: #fff;
+  padding: 15px; /* Увеличиваем отступы */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center; /* Центрируем текст внутри */
+}
+
+.github-link a,
+.telegram-link a {
+  color: #28a745; /* Зеленый цвет ссылок GitHub/Telegram */
+  font-weight: bold; /* Жирный шрифт */
+  display: block; /* Ссылка занимает всю ширину блока */
+}
+
+.github-link a:hover,
+.telegram-link a:hover {
+  color: #1e7e34; /* Более темный зеленый при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+/* Стили для кнопок проектов */
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Перенос кнопок на новую строку, если не хватает места */
+}
+
+.project-buttons button {
+  padding: 12px 20px; /* Увеличиваем размер кнопок */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  margin-bottom: 10px; /* Отступ между кнопками */
+}
+
+.project-buttons button:hover {
+  background-color: #0056b3; /* Более темный синий цвет при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Уменьшаем отступы на маленьких экранах */
+  }
+
+  .project-buttons {
+    flex-direction: column; /* Кнопки в столбик на маленьких экранах */
+  }
+
+  .project-buttons button {
+    width: 100%; /* Кнопки занимают всю ширину экрана */
+    margin-bottom: 10px;
+  }
+}
+.achievements {
+    margin: 40px 0;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 3px solid #4dabf7;
+}
+
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.achievement-header i {
+    font-size: 1.5rem;
+    color: #4dabf7;
+}
+
+.achievement-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.achievement-tech {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 10px;
+}
+
+.achievement-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4dabf7;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
